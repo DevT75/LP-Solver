@@ -31,7 +31,7 @@ namespace SolverLib{ // namespace for solver
                     vector<vector<double>> tableau;
                     vector<double> solution;
                     map<int, string> basic_variables, mp, slack;
-
+                    void printResult();
                     void printTableau();
                     int getEnteringIndex();
                     int getLeavingIndex(int enteringIndex);

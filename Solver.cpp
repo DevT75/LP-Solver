@@ -169,6 +169,7 @@ namespace SolverLib{
         }
 
         printTableau();
+        printResult();
     }
 
     void Solver::Simplex::printTableau() {
@@ -185,6 +186,15 @@ namespace SolverLib{
             }
             std::cout << solution[i] << std::endl;
         }
+        std::cout << std::endl;
+    }
+
+    void Solver::Simplex::printResult() {
+        std::cout << "Optimal value of Objective Function(Z) with basic variable values :\n" << std::endl;
+        for(int i = 0;i < m + 1;i++) std::cout << basic_variables[i] << "\t";
+        std::cout << std::endl;
+        for(int i = 0;i < m + 1;i++) std::cout << solution[i] << "\t";
+        std::cout << std::endl;
     }
 
 }
