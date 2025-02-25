@@ -15,7 +15,7 @@ namespace SolverLib{
         while(1){
             std::cout << "\n=== Linear Optimization Tool ===\n";
             std::cout << "1) Simplex\n";
-            std::cout << "2) TSP (not implemented yet)\n";
+            std::cout << "2) TP (not implemented yet)\n";
             std::cout << "3) Exit\n";
             std::cout << "Choose an option: ";
 
